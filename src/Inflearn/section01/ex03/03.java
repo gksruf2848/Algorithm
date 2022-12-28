@@ -1,5 +1,7 @@
+package Inflearn.section01.ex03;
+
 import java.util.*;
-class Main03{
+class Main{
     public String solution(String str){
         String answer = "";
         int m = Integer.MIN_VALUE, pos;
@@ -11,7 +13,7 @@ class Main03{
         return answer;
     }
     public static void main(String[] args){
-        Main03 T = new Main03();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         String str=sc.nextLine();
         System.out.print(T.solution(str));
