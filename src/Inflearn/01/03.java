@@ -1,17 +1,19 @@
 import java.util.*;
-class Main02{
+class Main03{
     public String solution(String str){
         String answer = "";
-        for(char x : str.toCharArray()){
-            if(Character.isLowerCase(x)) answer+=Character.toUpperCase(x);
-            else answer+=Character.toLowerCase(x);
+        int m = Integer.MIN_VALUE, pos;
+        while((pos=str.indexOf(' '))!=-1){
+            String tmp=str.substring(0, pos);
+            int len=tmp.length();
+
         }
         return answer;
     }
     public static void main(String[] args){
-        Main02 T = new Main02();
+        Main03 T = new Main03();
         Scanner sc = new Scanner(System.in);
-        String str=sc.next();
+        String str=sc.nextLine();
         System.out.print(T.solution(str));
     }
 }
